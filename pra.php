@@ -48,11 +48,14 @@
         // array_splice($fruits,0,2);// mango, watermelon(output)
         // print_r($fruits);
 
-     $fruits=['apple'=>'pp','banana'=>'po','mango'=>'lo','watermelon'=>'ko'];
-        $ll=array_diff($fruits,["pp","po"]);// mango, watermelon(output)
-        var_dump($ll);
-        print_r($ll);
+    //  $fruits=['apple'=>'pp','banana'=>'po','mango'=>'lo','watermelon'=>'ko'];
+    //     $ll=array_diff($fruits,["pp","po"]);// mango, watermelon(output)
+    //     var_dump($ll);
+    //     print_r($ll);
 
+    $lp=["kk","po","ii"];
+    $pp=array_shift($lp);//po,li
+    var_dump($lp) ;
         ?>
     </pre>
 
