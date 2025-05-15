@@ -29,6 +29,20 @@
             echo "<br> $w <br>"; //indexed array using loop to display all array..
         } */
 
+        // $car = array("brand"=>"Ford", "model"=>"Mustang", "year"=>1964);
+        // echo $car['model'];// Mustang
+
+        // $car = array("brand"=>"Ford", "model"=>"Mustang", "year"=>1964);
+        // foreach($car as $c){
+        //         echo "<br> $c <br>";
+        //          }
+
+        function add_value(&$value){// & rakhepxi 7 , otherwise 2 
+            $value+=5;
+        }
+        $n=2;
+        add_value($n);
+        echo $n;
         ?>
     </pre>
 
