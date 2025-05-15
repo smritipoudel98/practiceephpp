@@ -19,6 +19,16 @@
         
         // $d=array("hello", "world");
         // echo implode(" lol ",$d); // hello lol world
+
+        // $d=array("hello", "world");
+        // $d[1]="smriti";
+        // echo implode(" lol ",$d);// change value
+
+       /* $e=array("go","to","hell");
+        foreach($e as $w){
+            echo "<br> $w <br>"; //indexed array using loop to display all array..
+        } */
+
         ?>
     </pre>
 
