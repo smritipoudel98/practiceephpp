@@ -37,12 +37,22 @@
         //         echo "<br> $c <br>";
         //          }
 
-        function add_value(&$value){// & rakhepxi 7 , otherwise 2 
-            $value+=5;
-        }
-        $n=2;
-        add_value($n);
-        echo $n;
+        // function add_value(&$value){// & rakhepxi 7 , otherwise 2 
+        //     $value+=5;
+        // }
+        // $n=2;
+        // add_value($n);
+        // echo $n;
+
+        // $fruits=['apple','banana','mango','watermelon'];
+        // array_splice($fruits,0,2);// mango, watermelon(output)
+        // print_r($fruits);
+
+     $fruits=['apple'=>'pp','banana'=>'po','mango'=>'lo','watermelon'=>'ko'];
+        $ll=array_diff($fruits,["pp","po"]);// mango, watermelon(output)
+        var_dump($ll);
+        print_r($ll);
+
         ?>
     </pre>
 
