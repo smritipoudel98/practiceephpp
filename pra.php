@@ -10,9 +10,15 @@
 <body>
     <pre>
         <?php
-        $a="hello";
-        var_dump($a);
-        echo $a;
+        // $a="hello";
+        // var_dump($a); //string(5)"hello"
+        // echo $a;
+
+        //   $a="Hello";
+        //   echo strtolower($a);
+        
+        // $d=array("hello", "world");
+        // echo implode(" lol ",$d); // hello lol world
         ?>
     </pre>
 
