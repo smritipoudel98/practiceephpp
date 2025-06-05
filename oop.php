@@ -82,3 +82,4 @@ function printIterable(iterable $myIterable) {
 
 $arr = ["a", "b", "c",1,2,3];
 printIterable($arr);
+//output:abc123
