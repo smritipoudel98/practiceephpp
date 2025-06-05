@@ -22,6 +22,8 @@ class User{
 }
 $user=new User("ram",20);
 echo $user->display();
+//output:Your name is:ram
+//Your age is:20
 echo "<br>";
 //abstract class
 abstract class Mamma{
@@ -34,3 +36,4 @@ class Baby extends Mamma{
 }
 $name=new Baby();
 echo $name->eat("Mango");
+//output:Baby is eating Mango.
