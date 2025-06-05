@@ -36,4 +36,35 @@ class Baby extends Mamma{
 }
 $name=new Baby();
 echo $name->eat("Mango");
+echo "<br>";
 //output:Baby is eating Mango.
+
+
+class StaticMethod {
+    public static $name = "Smriti Poudel";
+    public $age = 20;
+
+    public static function show() {
+        echo self::$name;
+    }
+
+    public function display() {
+        return $this->age;
+    }
+}
+
+class ChildClass extends StaticMethod {
+    public static function show() {
+        echo parent::$name . " is my name";
+    }
+
+    public function display() {
+        echo "your age is: " . $this->age;
+    }
+}
+
+ChildClass::show();   // outputs: Smriti Poudel is my name
+echo "<br>";
+
+$obj = new ChildClass();
+$obj->display();      // outputs: your age is: 20
