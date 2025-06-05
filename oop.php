@@ -68,3 +68,17 @@ echo "<br>";
 
 $obj = new ChildClass();
 $obj->display();      // outputs: your age is: 20
+
+
+echo "<br>";
+//php iterables:iterable means anything you can loop through using foreach.
+//eg:An array is iterable — you can do foreach on it.
+//An object that implements Iterator or Traversable is also iterable.
+function printIterable(iterable $myIterable) {
+  foreach($myIterable as $item) {
+    echo $item;
+  }
+}
+
+$arr = ["a", "b", "c",1,2,3];
+printIterable($arr);
