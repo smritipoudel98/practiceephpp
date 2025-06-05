@@ -22,3 +22,15 @@ class User{
 }
 $user=new User("ram",20);
 echo $user->display();
+echo "<br>";
+//abstract class
+abstract class Mamma{
+    abstract public function eat($food);
+}
+class Baby extends Mamma{
+    public function eat($fruits){
+        return "Baby is eating ". $fruits. ".";
+    }
+}
+$name=new Baby();
+echo $name->eat("Mango");
